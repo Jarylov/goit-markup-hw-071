@@ -624,7 +624,104 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li>
+          <a href="./index.html" class="nav-link current">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="/" class="nav-link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="address-menu">
+        <li class="contact-tel">
+          <a href="tel:+110001111111" class="tel-link">+11 (000) 111-11-11</a>
+        </li>
+        <li class="contact-adr">
+          <a href="mailto:info@devstudio.com" class="contact-link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="social-mobile list">
+        <li class="social-item">
+          <a
+            class="social-link-mobile"
+            href="https://instagram.com"
+            rel="noopener noreferrer"
+            aria-label="instagram link"
+          >
+            <svg class="social-icon-mobile" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link-mobile"
+            href="https://twitter.com"
+            rel="noopener noreferrer"
+            aria-label="twitter link"
+          >
+            <svg class="social-icon-mobile" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link-mobile"
+            href="https://facebook.com"
+            rel="noopener noreferrer"
+            aria-label="facebook link"
+          >
+            <svg class="social-icon-mobile" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link-mobile"
+            href="https://linkedin.com/"
+            rel="noopener noreferrer"
+            aria-label="linkedin link"
+          >
+            <svg class="social-icon-mobile" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin-1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
