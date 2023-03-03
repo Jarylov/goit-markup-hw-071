@@ -20,12 +20,23 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- header section -->
     <header class="header-portfolio">
       <div class="container-header container">
+        <a class="logo link" href="./index.html"
+          >web<span class="logo-header">studio</span></a
+        >
+        <button
+          class="button-hamburger js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-gamburger" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav-header">
-          <a class="logo link" href="./index.html"
-            >web<span class="logo-header">studio</span></a
-          >
           <ul class="list flexbox-container-nav">
             <li>
               <a href="./index.html" class="nav link">Studio</a>
@@ -40,12 +51,12 @@
         </nav>
         <address class="address">
           <ul class="list flexbox-container-adr">
-            <li>
+            <li class="contact-adr">
               <a href="mailto:info@devstudio.com" class="contact link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contact-adr">
               <a href="tel:+110001111111" class="contact link"
                 >+11 (000) 111-11-11</a
               >
@@ -55,7 +66,7 @@
       </div>
     </header>
     <main>
-      <!-- Portfolio -->
+      <!-- Portfolio button -->
       <section class="section">
         <div class="container">
           <h1 hidden>Portfolio</h1>
@@ -76,15 +87,25 @@
               <button type="button" class="filter-btn">Marketing</button>
             </li>
           </ul>
-
+          <!-- Portfolio -->
           <ul class="list flexbox-container-card">
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-1_356.jpg 356w,
+                      ./images/portfolio/img-1_360.jpg 360w,
+                      ./images/portfolio/img-1_396.jpg 396w,
+                      ./images/portfolio/img-1_712.jpg 712w,
+                      ./images/portfolio/img-1_720.jpg 720w,
+                      ./images/portfolio/img-1_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-1_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="banking app interface
             concept"
                   />
@@ -103,12 +124,22 @@
               </a>
             </li>
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img1.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-2_356.jpg 356w,
+                      ./images/portfolio/img-2_360.jpg 360w,
+                      ./images/portfolio/img-2_396.jpg 396w,
+                      ./images/portfolio/img-2_712.jpg 712w,
+                      ./images/portfolio/img-2_720.jpg 720w,
+                      ./images/portfolio/img-2_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-2_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="cashless payment"
                   />
                   <div class="overlay">
@@ -126,12 +157,22 @@
               </a>
             </li>
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img2.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-3_356.jpg 356w,
+                      ./images/portfolio/img-3_360.jpg 360w,
+                      ./images/portfolio/img-3_396.jpg 396w,
+                      ./images/portfolio/img-3_712.jpg 712w,
+                      ./images/portfolio/img-3_720.jpg 720w,
+                      ./images/portfolio/img-3_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-3_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="Meditaion App"
                   />
                   <div class="overlay">
@@ -149,12 +190,22 @@
               </a>
             </li>
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img3.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-4_356.jpg 356w,
+                      ./images/portfolio/img-4_360.jpg 360w,
+                      ./images/portfolio/img-4_396.jpg 396w,
+                      ./images/portfolio/img-4_712.jpg 712w,
+                      ./images/portfolio/img-4_720.jpg 720w,
+                      ./images/portfolio/img-4_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-4_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="Taxi Service"
                   />
                   <div class="overlay">
@@ -172,12 +223,22 @@
               </a>
             </li>
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img4.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-5_356.jpg 356w,
+                      ./images/portfolio/img-5_360.jpg 360w,
+                      ./images/portfolio/img-5_396.jpg 396w,
+                      ./images/portfolio/img-5_712.jpg 712w,
+                      ./images/portfolio/img-5_720.jpg 720w,
+                      ./images/portfolio/img-5_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-5_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="Screen Illustrations"
                   />
                   <div class="overlay">
@@ -195,12 +256,22 @@
               </a>
             </li>
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img5.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-6_356.jpg 356w,
+                      ./images/portfolio/img-6_360.jpg 360w,
+                      ./images/portfolio/img-6_396.jpg 396w,
+                      ./images/portfolio/img-6_712.jpg 712w,
+                      ./images/portfolio/img-6_720.jpg 720w,
+                      ./images/portfolio/img-6_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-6_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="Online Courses"
                   />
                   <div class="overlay">
@@ -218,12 +289,22 @@
               </a>
             </li>
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img6.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-7_356.jpg 356w,
+                      ./images/portfolio/img-7_360.jpg 360w,
+                      ./images/portfolio/img-7_396.jpg 396w,
+                      ./images/portfolio/img-7_712.jpg 712w,
+                      ./images/portfolio/img-7_720.jpg 720w,
+                      ./images/portfolio/img-7_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-7_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="Instagram Stories Concept"
                   />
                   <div class="overlay">
@@ -241,12 +322,22 @@
               </a>
             </li>
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img7.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-8_356.jpg 356w,
+                      ./images/portfolio/img-8_360.jpg 360w,
+                      ./images/portfolio/img-8_396.jpg 396w,
+                      ./images/portfolio/img-8_712.jpg 712w,
+                      ./images/portfolio/img-8_720.jpg 720w,
+                      ./images/portfolio/img-8_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-8_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="Organic Food"
                   />
                   <div class="overlay">
@@ -264,12 +355,22 @@
               </a>
             </li>
             <li class="card-project">
-              <a href="" class="card link">
+              <a href="" class="card-portf link">
                 <div class="tumb">
                   <img
-                    src="./images/portfolio/img8.jpg"
-                    width="360"
+                    srcset="
+                      ./images/portfolio/img-9_356.jpg 356w,
+                      ./images/portfolio/img-9_360.jpg 360w,
+                      ./images/portfolio/img-9_396.jpg 396w,
+                      ./images/portfolio/img-9_712.jpg 712w,
+                      ./images/portfolio/img-9_720.jpg 720w,
+                      ./images/portfolio/img-9_792.jpg 792w
+                    "
+                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                    src="./images/portfolio/img-9_396.jpg"
+                    width="396"
                     height="300"
+                    loading="lazy"
                     alt="Fresh Coffee"
                   />
                   <div class="overlay">
@@ -293,67 +394,69 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer-container">
-        <div class="footer-link">
-          <a class="logo link" href="./index.html"
-            >web<span class="logo-footer">studio</span></a
-          >
-          <p class="text-footer">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="socmedia">
-          <h3 class="footer-title">Social media</h3>
-          <ul class="social-footer list">
-            <li class="social-item">
-              <a
-                class="social-link-footer"
-                href="https://instagram.com"
-                rel="noopener noreferrer"
-                aria-label="instagram link"
-              >
-                <svg class="social-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link-footer"
-                href="https://twitter.com"
-                rel="noopener noreferrer"
-                aria-label="twitter link"
-              >
-                <svg class="social-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link-footer"
-                href="https://facebook.com"
-                rel="noopener noreferrer"
-                aria-label="facebook link"
-              >
-                <svg class="social-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                class="social-link-footer"
-                href="https://linkedin.com/"
-                rel="noopener noreferrer"
-                aria-label="linkedin link"
-              >
-                <svg class="social-icon-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-link-socio">
+          <div class="footer-link">
+            <a class="logo link" href="./index.html"
+              >web<span class="logo-footer">studio</span></a
+            >
+            <p class="text-footer">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="socmedia">
+            <h3 class="footer-title">Social media</h3>
+            <ul class="social-footer list">
+              <li class="social-item">
+                <a
+                  class="social-link-footer"
+                  href="https://instagram.com"
+                  rel="noopener noreferrer"
+                  aria-label="instagram link"
+                >
+                  <svg class="social-icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link-footer"
+                  href="https://twitter.com"
+                  rel="noopener noreferrer"
+                  aria-label="twitter link"
+                >
+                  <svg class="social-icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link-footer"
+                  href="https://facebook.com"
+                  rel="noopener noreferrer"
+                  aria-label="facebook link"
+                >
+                  <svg class="social-icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link-footer"
+                  href="https://linkedin.com/"
+                  rel="noopener noreferrer"
+                  aria-label="linkedin link"
+                >
+                  <svg class="social-icon-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="subscrible-wrapper">
           <b class="text-form-footer">Subscribe</b>
@@ -369,8 +472,8 @@
             </label>
             <button class="button-footer" type="submit">
               Subscribe
-              <svg class="subscrible-icon" width="" height="">
-                <use href=""></use>
+              <svg class="subscrible-icon" width="24" height="24">
+                <use href="./images/icons.svg#plane"></use>
               </svg>
             </button>
           </form>
